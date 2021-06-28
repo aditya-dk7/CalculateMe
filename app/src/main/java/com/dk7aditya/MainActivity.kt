@@ -9,10 +9,12 @@ import android.widget.Toast
 import java.lang.ArithmeticException
 
 class MainActivity : AppCompatActivity() {
+
     private var lastNumeric : Boolean = false
     private var lastDot : Boolean = false
     private lateinit var tvView:TextView
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.MainTheme)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         tvView = findViewById(R.id.tvInput)
@@ -93,7 +95,7 @@ class MainActivity : AppCompatActivity() {
     }
     fun onOperator(view: View){
         if(lastNumeric && !isOperatorAdded(tvView.text.toString())){
-            tvView.append((view as Button).text)
+            tvView.append(" " + (view as Button).text + " ")
             lastNumeric = false
             lastDot = false
         }

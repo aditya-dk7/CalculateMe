@@ -4,15 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/grayish">
     <TextView
         android:id="@+id/tvInput"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:text=""
-        android:background="#efefef"
         android:textSize="48sp"
         android:maxLength="12"
+        android:textColor="@color/white"
         android:gravity="end|bottom|center_vertical"
         />
     <LinearLayout
@@ -21,13 +22,15 @@
         android:layout_marginTop="2dp"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:padding="1dp">
+        android:padding="1dp"
+        android:background="#2A2D37">
         <Button
             android:id="@+id/buttonSeven"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="@string/seven"
             android:layout_weight="1"
+            android:backgroundTint="#282B33"
             android:onClick="onDigit"
             android:layout_marginStart="1dp"/>
         <Button
@@ -36,6 +39,7 @@
             android:layout_height="match_parent"
             android:text="@string/eight"
             android:layout_weight="1"
+            android:backgroundTint="#282B33"
             android:onClick="onDigit"
             android:layout_marginStart="1dp"
            />
@@ -44,6 +48,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="@string/nine"
+            android:backgroundTint="#282B33"
             android:layout_weight="1"
             android:onClick="onDigit"
             android:layout_marginStart="1dp"
@@ -52,8 +57,10 @@
             android:id="@+id/buttonDivide"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:backgroundTint="#282B33"
             android:text="@string/divide"
             android:layout_weight="1"
+            android:textColor="#C75B63"
             android:onClick="onOperator"
             android:layout_marginStart="1dp"
             />
@@ -61,15 +68,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:layout_marginTop="2dp"
         android:layout_weight="1"
         android:orientation="horizontal"
         android:padding="1dp"
+        android:background="#292C34"
         >
         <Button
             android:id="@+id/buttonFour"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:backgroundTint="#282B33"
             android:text="@string/four"
             android:layout_weight="1"
             android:onClick="onDigit"
@@ -78,6 +88,7 @@
             android:id="@+id/buttonFive"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:backgroundTint="#282B33"
             android:text="@string/five"
             android:layout_weight="1"
             android:onClick="onDigit"
@@ -87,6 +98,7 @@
             android:id="@+id/buttonSix"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:backgroundTint="#282B33"
             android:text="@string/six"
             android:layout_weight="1"
             android:onClick="onDigit"
@@ -96,8 +108,10 @@
             android:id="@+id/buttonMultiply"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:backgroundTint="#282B33"
             android:text="@string/multiply"
             android:layout_weight="1"
+            android:textColor="#C75B63"
             android:onClick="onOperator"
             android:layout_marginStart="1dp"
             />
@@ -108,6 +122,7 @@
         android:layout_marginTop="2dp"
         android:layout_weight="1"
         android:orientation="horizontal"
+        android:background="#292C34"
         android:padding="1dp">
         <Button
             android:id="@+id/buttonOne"
@@ -115,6 +130,7 @@
             android:layout_height="match_parent"
             android:text="@string/one"
             android:layout_weight="1"
+            android:backgroundTint="#282B33"
             android:onClick="onDigit"
             android:layout_marginStart="1dp"/>
         <Button
@@ -123,6 +139,7 @@
             android:layout_height="match_parent"
             android:text="@string/two"
             android:layout_weight="1"
+            android:backgroundTint="#282B33"
             android:onClick="onDigit"
             android:layout_marginStart="1dp"
             />
@@ -131,6 +148,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="@string/three"
+            android:backgroundTint="#282B33"
             android:layout_weight="1"
             android:onClick="onDigit"
             android:layout_marginStart="1dp"
@@ -141,6 +159,8 @@
             android:layout_height="match_parent"
             android:text="@string/subtract"
             android:layout_weight="1"
+            android:backgroundTint="#282B33"
+            android:textColor="#C75B63"
             android:onClick="onOperator"
             android:layout_marginStart="1dp"
             />
@@ -150,6 +170,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:layout_weight="1"
+        android:background="#292C34"
+
         android:orientation="horizontal"
         android:padding="1dp">
         <Button
@@ -159,6 +181,7 @@
             android:text="@string/decimal"
             android:layout_weight="1"
             android:onClick="onDecimal"
+            android:backgroundTint="#282B33"
             android:layout_marginStart="1dp"/>
         <Button
             android:id="@+id/buttonZero"
@@ -167,6 +190,7 @@
             android:text="@string/zero"
             android:layout_weight="1"
             android:onClick="onDigit"
+            android:backgroundTint="#282B33"
             android:layout_marginStart="1dp"
             />
         <Button
@@ -176,6 +200,9 @@
             android:text="@string/clear"
             android:layout_weight="1"
             android:onClick="onClear"
+            android:backgroundTint="#282B33"
+            android:textColor="#44D5BF"
+
             android:layout_marginStart="1dp"
             />
         <Button
@@ -184,6 +211,8 @@
             android:layout_height="match_parent"
             android:text="@string/add"
             android:layout_weight="1"
+            android:backgroundTint="#282B33"
+            android:textColor="#C75B63"
             android:onClick="onOperator"
             android:layout_marginStart="1dp"
             />
@@ -194,6 +223,7 @@
         android:layout_marginTop="2dp"
         android:layout_weight="1"
         android:orientation="horizontal"
+        android:background="#292C34"
         android:padding="1dp">
         <Button
             android:id="@+id/buttonEqual"
@@ -203,6 +233,8 @@
             android:layout_weight="1"
             android:onClick="onEquals"
             android:layout_marginStart="1dp"
+            android:backgroundTint="#282B33"
+            android:textColor="#C75B63"
             tools:ignore="NestedWeights" />
 
     </LinearLayout>
